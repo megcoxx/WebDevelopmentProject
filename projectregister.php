@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "task_manager");
+$conn = new mysqli("localhost", "root", "newpassword", "task_manager");
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = $_POST["username"];
