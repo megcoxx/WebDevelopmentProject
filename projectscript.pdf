@@ -1,0 +1,20 @@
+document.getElementById("loginForm").addEventListener("submit", function (e) {
+    const username = document.getElementById("loginUsername").value.trim();
+    const password = document.getElementById("loginPassword").value.trim();
+
+    if (!username || !password) {
+        e.preventDefault();
+        alert("All fields are required for login.");
+    }
+});
+
+document.getElementById("registerForm").addEventListener("submit", function (e) {
+    const username = document.getElementById("registerUsername").value.trim();
+    const email = document.getElementById("registerEmail").value.trim();
+    const password = document.getElementById("registerPassword").value.trim();
+
+    if (!username || !email || !password) {
+        e.preventDefault();
+        alert("All fields are required for registration.");
+    }
+});

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Task Manager</h1>
+    </header>
+    <nav>
+        <a href="#login">Login</a>
+        <a href="#register">Register</a>
+    </nav>
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form id="loginForm" action="login.php" method="POST">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="username" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="register">
+            <h2>Register</h2>
+            <form id="registerForm" action="register.php" method="POST">
+                <label for="registerUsername">Username:</label>
+                <input type="text" id="registerUsername" name="username" required>
+                <label for="registerEmail">Email:</label>
+                <input type="email" id="registerEmail" name="email" required>
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" name="password" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
