@@ -10,7 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $stmt->bind_param("sss", $username, $email, $password);
 
     if ($stmt->execute()) {
-        echo "Registration successful!";
+        header("Location: viewTasks.php");
+        exit();
     } else {
         echo "Error: " . $stmt->error;
     }
